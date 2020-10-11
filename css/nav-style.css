@@ -3,8 +3,8 @@
     width: auto;
     
 }
-.nav-link:active{
-    /* border-bottom: 2px solid var(--primary-color) !important; */
+.nav-link.active > a{
+    border-bottom: 2px solid var(--primary-color) !important;
     color: white
 
 }

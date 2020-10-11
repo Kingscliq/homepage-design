@@ -116,7 +116,6 @@
     color: white;
     background-color: #3b5998;
   }
-
   .dark-overlay{
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -131,4 +130,8 @@
 .banner{
     height: 30vh;
     width: 100vw;
+}
+
+h3{
+  color: var(--primary-color) !important
 }

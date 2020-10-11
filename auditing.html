@@ -12,22 +12,31 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer-style.css">
     <link rel="stylesheet" href="about-style.css">
-    
-    <link rel="stylesheet" href="css/util.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/contact-css.css">
-    <style>
-      @media only screen and (max-width: 780px){
-        .h3{
-          font-size: 1.5rem
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="contact-css.css">
     <title>HCISS | We are the Future Securing the Health of our Blockchain</title>
+
+    <style>
+          .dark-overlay{
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 30vh;
+    }
+    .wrapper{
+        margin-top: -100px;
+    }
+    .banner{
+        height: 30vh;
+        width: 100vw;
+    }
+
+    </style>
   </head>
   <body>
    
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <nav class="navbar navbar-collapse-sm navbar-expand-md navbar-dark fixed-top">
       <div class="container">
         <a href="index.html" class="navbar-brand"><img class="logo" src="images/hciss_logo.png" alt="hciss logo"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -36,14 +45,14 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link">Home</a>
             </li>
           
             
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Services
-              <zs/a>
+              </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item primary-color border-0 z-depth-1"  href="#">BSECAaaS</a>
                 <a class="dropdown-item primary-color border-0 z-depth-1" href="#">Auditing and Analytics</a>
@@ -52,19 +61,19 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About Us
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item primary-color border-0 z-depth-1"  href="#">HCISS History</a>
-                <a class="dropdown-item primary-color border-0 z-depth-1" href="#">Mission</a>
-                <a class="dropdown-item primary-color border-0 z-depth-1" href="#">Partners</a>
-                <a class="dropdown-item primary-color border-0 z-depth-1" href="#">Team</a>
-                <a class="dropdown-item primary-color border-0 z-depth-1" href="#">Testimonials</a>
+                <a class="dropdown-item primary-color border-0 z-depth-1"  href="about.html#history">HCISS History</a>
+                <a class="dropdown-item primary-color border-0 z-depth-1" href="about.html#mission">Mission</a>
+                <a class="dropdown-item primary-color border-0 z-depth-1" href="about.html#partners">Partners</a>
+                <a class="dropdown-item primary-color border-0 z-depth-1" href="about.html#team">Team</a>
+                <a class="dropdown-item primary-color border-0 z-depth-1" href="#testimonials">Testimonials</a>
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="post.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Blog
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -75,19 +84,19 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Contact
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item primary-color border-0 z-depth-1"  href="#">Support</a>
+                <a class="dropdown-item primary-color border-0 z-depth-1"  href="contact.html">Support</a>
                 
               </div>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             
-            <button class="btn btn-primary my-2 my-sm-0 rounded-0 ml-2" type="submit">Login</button>
-            <button class="btn btn-outline-primary my-2 my-sm-0 rounded-0 ml-2" type="submit">Request A Demo</button>
+            <a class="btn btn-primary my-2 my-sm-0 rounded-0 ml-2" type="submit" href="login.html">Login</a>
+            <a class="btn btn-outline-primary my-2 my-sm-0 rounded-0 ml-2" type="submit" href="demo-request.html">Request A Demo</a>
           </form>
         </div>
       </div>
@@ -102,7 +111,7 @@
               <div class="col-md-12 wrapper">
                   <div class="content">
                       <div>
-                          <h1 class="main-text text-center text-header">Demo Request</h1>
+                          <h1 class="main-text text-center text-header mt-9">Auditing and Analytics</h1>
                       </div>
                   </div>
                       
@@ -113,107 +122,17 @@
       </div>
     </div>
     <!-- END OF MAIN SECTION -->
-    
-<!-- contact form -->
-
-<div class="container-contact100">
-  <div class="wrap-contact100">
-    <button class="btn-hide-contact100">
-      <i class="zmdi zmdi-close"></i>
-    </button>
-
-    <div class="contact100-form-title" style="background-image: url('images/hciss\ blockchain\ \(6\).jpg');">
-      <span>Contact Us</span>
-    </div>
-
-    <form class="contact100-form validate-form">
-      <div class="wrap-input100 validate-input">
-        <input id="name" class="input100" type="text" name="name" placeholder="Company Name">
-        <span class="focus-input100"></span>
-        <label class="label-input100" for="name">
-          <span class="lnr lnr-user m-b-2"></span>
-        </label>
-      </div>
-      
-      <div class="wrap-input100 validate-input">
-        <input id="name" class="input100" type="text" name="name" placeholder="Contact Person">
-        <span class="focus-input100"></span>
-        <label class="label-input100" for="name">
-          <span class="lnr lnr-user m-b-2"></span>
-        </label>
-      </div>
-
-      <div class="wrap-input100 validate-input">
-        <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
-        <span class="focus-input100"></span>
-        <label class="label-input100" for="email">
-          <span class="lnr lnr-envelope m-b-5"></span>
-        </label>
-      </div>
-
-      <div class="wrap-input100 validate-input">
-        <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
-        <span class="focus-input100"></span>
-        <label class="label-input100" for="phone">
-          <span class="lnr lnr-smartphone m-b-2"></span>
-        </label>
-      </div>
-
-      <div class="wrap-input100 validate-input">
-        <input id="industry" class="input100" type="text" name="industry" placeholder="Industry">
-        <span class="focus-input100"></span>
-        <label class="label-input100" for="industry">
-          <span class="lnr lnr-user m-b-2"></span>
-        </label>
-      </div>
-
-      <div class="wrap-input100 validate-input">
-        <input id="name" class="input100" type="text" name="name" placeholder="Service Sector">
-        <span class="focus-input100"></span>
-        <label class="label-input100" for="name">
-          <span class="lnr lnr-user m-b-2"></span>
-        </label>
-      </div>
-  
-      <div class="wrap-input100 validate-input">
-        <select name="" class="input100 form-control" style="color: #999999">
-          <option value="Select State of Origin">Region</option>
-          <option value="Enugu">Enugu</option>
-          <option value="Jos">Jos</option>
-          <option value="Lagos">Lagos</option>
-         
-        </select>
-        <span class="focus-input100"></span>
-        <label class="label-input100" for="">
-          <span class="lnr lnr-envelope m-b-5"></span>
-        </label>
-        
-      </div>
 
 
-     
-
-
-      <div class="wrap-input100 validate-input">
-        <textarea id="message" class="input100" name="message" placeholder="Your comments..."></textarea>
-        <span class="focus-input100"></span>
-        <label class="label-input100 rs1" for="message">
-          <span class="lnr lnr-bubble"></span>
-        </label>
-      </div>
-
-      <div class="container-contact100-form-btn">
-        <button class="contact100-form-btn">
-          Apply
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
-
-
-
-<!-- End contact form -->
+<!-- APPLY FOR A DEMO -->
+<section class="demo-application mt-5 bg-dark pt-5 pb-5">
+  <header class="container">
+    <h1 class="text-center text-header primary-font">Apply For A Demo</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nam.</p>
+    <p class="text-center"> <a href="#" class="btn btn-outline-primary rounded-0 text-center">APPLY NOW</a></p>
+  </header>
+</section>
+<!-- END APPLY FOR A DEMO -->
 
 <!-- FOOTER SECTION -->
 <section class="footer-section" style="background-color: #2e4469">

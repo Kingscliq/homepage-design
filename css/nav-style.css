@@ -8,6 +8,10 @@
     color: white
 
 }
+.dropdown-item:hover{
+    background-color: var(--primary-color);
+    color: #f4f4f4
+}
 
 @media (max-width: 544px) {  
     .brand {display: none} /*1rem = 16px*/

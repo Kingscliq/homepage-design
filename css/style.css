@@ -169,10 +169,9 @@ body{
     background: var(--primary-color);
     color:#fff;
 }
-.list-group .list-group-item{
-    background-color: var(--tertiary-color) !important;
+/* .list-group .list-group-item{
     font-size: .89rem
-}
+} */
 @media only screen and (max-width: 990px){
     .pricingTable{
         margin-bottom: 40px;
@@ -548,10 +547,6 @@ body{
     border-color: #007b5e;
 }
 
-section {
-    padding: 60px 0;
-}
-
 section .section-title {
     text-align: center;
     color: #007b5e;
@@ -641,7 +636,7 @@ section .section-title {
     min-height: 312px;
 }
 
-.backside .card a {
+.backside .card a{
     font-size: 18px;
     color: #007b5e !important;
 }

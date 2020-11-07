@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/nav-style.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer-style.css">
+    <script src="js/ghost-typer.min.js" defer></script>
     <title>HCISS | We are the Future Securing the Health of Your Blockchain Ecosystem.</title>
   </head>
   <body>
@@ -104,7 +105,7 @@
                           <h2 class="main-text">We are the future</h2>
                           <h4> Securing the Health of Your Blockchain Ecosystem</h4>
                           <p class="h5 mt-4" style="line-height: 2rem; text-align: justify;">We provide Cyber Security operational analytics solutions to find patterns of highly advanced threats.
-                          <p class="h5">We do this with our  BSECAaaS application platform-</p><p class="h5"><strong style="color: var(--primary-color)">The 8th Blockchain Business Model.</strong></p>
+                          <p class="h5">We do this with our  BSECAaaS application platform-</p><p class="h5"><strong style="color: var(--primary-color)"><span id="ghost">The 8th Blockchain Business Model.</span></strong></p>
                     </div>
                       </div>
                       
@@ -138,7 +139,7 @@
  
     <!-- <END TAG line> -->
    <!-- OUR SOLUTION -->
-   <section class="our-solution">
+   <div class="our-solution">
      <div class="solution-header" id="services">
       <h1 class="text-header text-white text-center">Solutions</h1>
      </div>
@@ -177,7 +178,7 @@
       </div>
      </div>
 
-   </section>
+    </div>
    <!-- OUR Clients-->
    <section class="our-solution">
      <div class="solution-header" id="services">
@@ -547,6 +548,7 @@ background: linear-gradient(45deg, rgba(239,239,239,1) 54%, rgba(204,204,204,1) 
                     <div class="icon"><a href="#"><i class=" fab fa-twitter"></i></a></div>
                     <div class="icon"> <a href="#"><i class=" fab fa-snapchat"></i></a></div>
                     <div class="icon"><a href="#"><i class=" fab fa-instagram"></i></a></div>
+                    <div class="icon"><a href="#"><i class=" fab fa-github"></i></a></div>
                 </div>
                 <p class="copyright">Health Blockchain Security © 2020</p>
                 </div>
@@ -607,43 +609,50 @@ background: linear-gradient(45deg, rgba(239,239,239,1) 54%, rgba(204,204,204,1) 
 
 $(document).ready(function(){
 
-if($('.brands_slider').length)
-{
-var brandsSlider = $('.brands_slider');
+// if($('.brands_slider').length)
+// {
+// var brandsSlider = $('.brands_slider');
 
-brandsSlider.owlCarousel(
-{
-  loop:true,
-  autoplay:true,
-  autoplayTimeout:5000,
-  nav:false,
-  dots:false,
-  autoWidth:true,
-  items:8,
-  margin:42  
+// brandsSlider.owlCarousel(
+// {
+//   loop:true,
+//   autoplay:true,
+//   autoplayTimeout:5000,
+//   nav:false,
+//   dots:false,
+//   autoWidth:true,
+//   items:8,
+//   margin:42  
+// });
+
+//     if($('.brands_prev').length)
+//     {
+//     var prev = $('.brands_prev');
+//     prev.on('click', function()
+//     {
+//     brandsSlider.trigger('prev.owl.carousel');
+//     });
+//     }
+
+//     if($('.brands_next').length)
+//     {
+//     var next = $('.brands_next');
+//     next.on('click', function()
+//     {
+//     brandsSlider.trigger('next.owl.carousel');
+//     });
+//     }
+//     }
+
+$('#ghost').ghosttyper({
+  messages:['The 8th Blockchain Business Model.', 'The 8th Blockchain Business Model.'],
+  timeWrite: 40,
+  timeDelete: 40,
+  timePause: 1000
+})
+
 });
 
-    if($('.brands_prev').length)
-    {
-    var prev = $('.brands_prev');
-    prev.on('click', function()
-    {
-    brandsSlider.trigger('prev.owl.carousel');
-    });
-    }
-
-    if($('.brands_next').length)
-    {
-    var next = $('.brands_next');
-    next.on('click', function()
-    {
-    brandsSlider.trigger('next.owl.carousel');
-    });
-    }
-    }
-
-
-});
     </script>
   </body>
 </html>

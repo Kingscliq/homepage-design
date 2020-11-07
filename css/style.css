@@ -332,6 +332,7 @@ body{
       padding-top:25px;
       font-size:24px;
     }
+    
   }
   
   .article-list .intro {
@@ -460,6 +461,9 @@ body{
         padding: 20px;
         width: 100%
         
+    }
+    #company-caption-text{
+        display: none;
     }
 }
 

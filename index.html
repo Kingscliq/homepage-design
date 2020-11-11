@@ -194,25 +194,15 @@
                 <h1 class="card-title text-center icon-serve"><i class="fas fa-university text-dark"></i></h1>
                 <h5 class="card- text-center text-primary">Banks and FinTechs</h5>
                 <p class="text-dark text-justify">A huge percentage of financial companies now adopt blockchain technology because it enhances peer-to-peer payment
-                systems, better security, and low transaction fees.
+                systems, better security, and low transaction fees. <span id="dots">...</span><span id="more">By the current market dynamics, it is estimated that the use of blockchain technology by FinTechs to grow by $460 billion by 2025. As the market potential continues to grow, we also, continue to provide them with competent security analytics to mitigate losing funds to hackers.</span>
                 </p>
                 <p>
             
-                <button class="btn btn-outline-primary rounded-0 text-center align-items-center" type="button" data-toggle="collapse" data-target="#banks" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn btn-outline-primary rounded-0 text-center align-items-center" type="button" onclick="readFunc()" id="readMore">
                     Read More
                   </button>
                 </p>
-                <div class="collapse" id="banks">
-                  <div class="card card-body">
-                    
-                    <p class="text-dark">
-                      By the current market dynamics, it is estimated that the use of blockchain technology by FinTechs to grow by $460 billion by 2025. As the market potential continues to grow, we also, continue to provide them with competent security analytics to mitigate losing funds to hackers.
-      
-                    </p>
-      
-                  </div>
-                </div>
-      
+                
 
                 
               </div>
@@ -225,25 +215,15 @@
                 <!-- Changes card title for services -->
                 <h1 class="card-title text-center"><i class="fas fa-users text-dark"></i></h1>
                 <h5 class="card- text-center text-primary">Government</h5>
-                <p class="text-dark text-justify">The government’s use of blockchain technology to achieve election transparency and eliminate voter fraud, as well as registration of digital assets, tax information and other services.
+                <p class="text-dark text-justify">The government’s use of blockchain technology to achieve election transparency and eliminate voter fraud, as well as registration of digital assets, tax information and other services.<span id="dots1">...</span><span id="more1">HCISS serves the government by providing useful security metrics and technologies and keeping these valuable data safe from malicious attacks.</span>
                 </p>
                 <p>
             
-                  <button class="btn btn-outline-primary rounded-0 text-center align-items-center" type="button" data-toggle="collapse" data-target="#govt" aria-expanded="false" aria-controls="govt">
-                    Read More
-                  </button>
-                </p>
-                <div class="collapse" id="govt">
-                  <div class="card card-body">
-                    
-                    <p class="text-dark">
-                      HCISS serves the government by providing useful security metrics and technologies and keeping these valuable data safe from malicious attacks.
-
-      
-                    </p>
-      
-                  </div>
-                </div>
+                  <button class="btn btn-outline-primary rounded-0 text-center align-items-center" type="button" onclick="readFunc1()" id="readMore1">
+                      Read More
+                    </button>
+                  </p>
+               
       
 
                 
@@ -258,26 +238,15 @@
                 <h1 class="card-title text-center icon-serve"><i class="fas fa-medkit text-dark"></i></h1>
                 <h5 class="card- text-center text-primary">Health Services</h5>
                 <p class="text-dark text-justify">With controversies and breach of confidentiality that have trailed patients’ data and information contained in centralized files, health service providers now use smart contract technology to solve these problems.
-
+                  <span id="dots2">...</span><span id="more2">  Because smart contracts are not totally immune to malicious attacks, our SCSA is available to provide a cover.
+                    Other clients are Media and entertainment, Real Estates, Energy and Manufacturing.</span>
                 </p>
                 <p>
             
-                  <button class="btn btn-outline-primary rounded-0 text-center align-items-center" type="button" data-toggle="collapse" data-target="#health" aria-expanded="false" aria-controls="collapseExample">
-                    Read More
-                  </button>
-                </p>
-                <div class="collapse" id="health">
-                  <div class="card card-body">
-                    
-                    <p class="text-dark">
-                      Because smart contracts are not totally immune to malicious attacks, our SCSA is available to provide a cover.
-                      Other clients are Media and entertainment, Real Estates, Energy and Manufacturing.
-
-
-                    </p>
-      
-                  </div>
-                </div>
+                  <button class="btn btn-outline-primary rounded-0 text-center align-items-center" type="button" onclick="readFunc2()" id="readMore2">
+                      Read More
+                    </button>
+                  </p>
       
 
                 
@@ -488,7 +457,7 @@ background: linear-gradient(45deg, rgba(239,239,239,1) 54%, rgba(204,204,204,1) 
           </h3>
           </header>
           <p style="color: #333" class="">
-            Get the Latest Health Blockchain Security Services news Events and Resources sent straight to your inbocx quaterly 
+            Get the Latest Health Blockchain Security Services news Events and Resources sent straight to your inbox quaterly 
           </p>
       </div>
       <div class="col-md-5">
@@ -647,11 +616,67 @@ $(document).ready(function(){
 $('#ghost').ghosttyper({
   messages:['The 8th Blockchain Business Model.', 'The 8th Blockchain Business Model.'],
   timeWrite: 40,
-  timeDelete: 40,
+  timeDelete: 500,
   timePause: 1000
 })
 
 });
+
+function readFunc() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readMore");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc1() {
+  var dots1 = document.getElementById("dots1");
+  var moreText1 = document.getElementById("more1");
+  var btnText1 = document.getElementById("readMore1");
+
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btnText1.innerHTML = "Read more";
+    moreText1.style.display = "none";
+  } else {
+    dots1.style.display = "none";
+    btnText1.innerHTML = "Read less";
+    moreText1.style.display = "inline";
+  }
+}
+function readFunc2() {
+  let dots2 = document.getElementById("dots2");
+  let moreText2 = document.getElementById("more2");
+  let btnText2 = document.getElementById("readMore2");
+
+  
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more";
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less";
+    moreText2.style.display = "inline";
+  }
+
+  
+}
+  
+  
+  
+
+  
+  
+
 
     </script>
   </body>

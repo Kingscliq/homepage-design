@@ -655,3 +655,5 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
+
+#more, #more1, #more2{display: none;}
